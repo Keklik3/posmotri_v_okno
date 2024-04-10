@@ -9,7 +9,10 @@ html {
 }
 
 .page {
-  inline-size: 1200px;
+  display: flex;
+  min-inline-size: 1140px;
+  align-items: center;
+  justify-content: center;
   block-size: 100%;
   margin: auto;
   color: #fff;
@@ -41,7 +44,6 @@ ol {
   display: flex;
   align-items: center;
   column-gap: 30px;
-  height: 100%;
 }
 
 .search-form__fieldset {
@@ -270,7 +272,8 @@ ol {
   background-color: #545050;
 }
 
-.search-form__submit-button:focus-visible {
+.button:focus-visible {
   outline-offset: 2px;
   outline: 1px solid #fff;
+  overflow: visible;
 }
